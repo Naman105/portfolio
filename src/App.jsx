@@ -43,7 +43,7 @@ animate={{opacity:1}}
 transition={{duration:0.8}}
 >
     <div
-className="bg-gradient-to-b from-[#0a0a0a] via-[#0d1117] to-black text-white scroll-smooth"
+className="bg-gradient-to-b from-[#0a0a0a] via-[#0d1117] to-black text-white min-h-screen w-full overflow-x-hidden scroll-smooth"
 onMouseMove={(e) => setCursor({ x: e.clientX, y: e.clientY })}
 >
    <motion.div

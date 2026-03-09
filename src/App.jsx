@@ -189,9 +189,11 @@ backgroundSize:"40px 40px"
           sequence={[
           "Full Stack Developer",
           2000,
-          "Building Modern Web Applications",
+          "MERN Stack Developer",
           2000,
-          "Passionate About Clean Code",
+          "React & Node.js Developer",
+          2000,
+          "Building Modern Web Applications",
           2000
           ]}
           wrapper="span"

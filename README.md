@@ -1,16 +1,50 @@
-# React + Vite
+# 🌐 Naman Goel – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal developer portfolio website. The portfolio showcases my projects, technical skills, and coding profiles while providing a central place to learn more about my work and development journey.
 
-Currently, two official plugins are available:
+## 🚀 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 https://naman-goel.vercel.app
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Tailwind CSS
+* Framer Motion
+* JavaScript
+* Vite
 
-## Expanding the ESLint configuration
+## 📂 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Responsive portfolio design
+* Smooth animations with Framer Motion
+* Projects showcase section
+* Skills and tech stack overview
+* DSA & coding profiles (LeetCode, Codeforces, HackerRank)
+* Resume download
+* Contact section
+
+## 📊 Coding Profiles
+
+* LeetCode: https://leetcode.com/u/NamanGoel123/
+* Codeforces: https://codeforces.com/profile/Namangoel789
+* HackerRank: https://www.hackerrank.com/profile/goelnaman366
+
+## 📌 Projects Included
+
+* **Jarvis Voice Assistant** – Voice-controlled assistant built using Python.
+* **Dummy Company Website** – Responsive multi-section website demonstrating UI layout and structure.
+
+## ⚡ Deployment
+
+This portfolio is deployed using **Vercel** with automatic deployment from GitHub.
+
+## 📫 Contact
+
+* Email: [goelnaman366@gmail.com](mailto:goelnaman366@gmail.com)
+* LinkedIn: https://www.linkedin.com/in/naman-goel-378417275/
+* GitHub: https://github.com/Naman105
+
+---
+
+⭐ If you like this project, feel free to give it a star!

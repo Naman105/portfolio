@@ -188,13 +188,13 @@ backgroundSize:"40px 40px"
           <TypeAnimation
           sequence={[
           "Full Stack Developer",
-          2000,
+          1500,
           "MERN Stack Developer",
-          2000,
+          1500,
           "React & Node.js Developer",
-          2000,
+          1500,
           "Building Modern Web Applications",
-          2000
+          1500
           ]}
           wrapper="span"
           speed={50}
@@ -206,9 +206,37 @@ backgroundSize:"40px 40px"
              Aspiring Full Stack Developer focused on building modern web applications and improving problem-solving skills through Data Structures & Algorithms.
           </p>
 
-            <div className="flex flex-wrap gap-3 mt-3 text-sm">
+         <div className="mt-6 flex items-center justify-center md:justify-start gap-5">
 
-              <span className="px-3 py-1 border border-gray-700 bg-black/30 rounded-full">
+<a
+href="/resume.pdf"
+className="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700 transition "
+>
+Resume
+</a>
+
+<a 
+href="https://github.com/Naman105" 
+target="_blank"
+rel="noopener noreferrer"
+>
+<FaGithub size={24} className="hover:text-blue-400"/>
+</a>
+
+<a 
+href="https://www.linkedin.com/in/naman-goel-378417275/" 
+target="_blank"
+rel="noopener noreferrer"
+>
+<FaLinkedin size={24} className="hover:text-blue-400"/>
+</a>
+
+</div>
+
+
+<div className="flex flex-wrap gap-3 mt-6 text-sm">
+
+<span className="px-3 py-1 border border-gray-700 bg-black/30 rounded-full">
 React.js
 </span>
 

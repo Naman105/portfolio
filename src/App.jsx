@@ -203,7 +203,7 @@ backgroundSize:"40px 40px"
           />
 
           <p className="text-gray-400 mb-6 leading-relaxed">
-             Aspiring Full Stack Developer focused on building modern web applications and improving problem-solving skills through Data Structures & Algorithms.
+             Full Stack Developer focused on building modern web applications with MERN stack and improving problem-solving skills through Data Structures & Algorithms.
           </p>
 
          <div className="mt-6 flex items-center justify-center md:justify-start gap-5">
@@ -335,7 +335,7 @@ DSA
             <Card title="Backend" text="Node.js, Express.js, REST APIs, MongoDB, SQL" />
             <Card title="Programming" text="C++, Python" />
             <Card title="Concepts" text="Data Structures & Algorithms" />
-            <Card title="Tools" text="Git, GitHub, VS Code" />
+            <Card title="Tools" text="Git, GitHub, VS Code, Vercel, Render" />
 
           </div>
         </div>
@@ -358,7 +358,7 @@ Featured Projects
 
 <motion.div
   initial={{ scaleX: 0 }}
-  whileInView={{ scaleX: 1.91 }}
+  whileInView={{ scaleX: 1 }}
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}
   className="origin-left h-[2px] w-32 bg-blue-500 mb-6"
@@ -367,17 +367,34 @@ Featured Projects
 <div className="grid md:grid-cols-2 gap-10">
 
   <Project
-    title="Jarvis Voice Assistant"
-    desc="Voice-controlled AI assistant built using Python that performs system automation and command execution."
-    tech="Python, NLP"
-    github="https://github.com/Naman105/Jarvis-Voice-Assistant"
+    title="MERN Weather App"
+    desc="A full-stack weather application with real-time API data and responsive UI."
+    tech="MongoDB, Express.js, React, Node.js"
+    github="https://github.com/Naman105/MERN-Weather-App"
+    live="https://mern-weather-app-iota.vercel.app/"
   />
 
   <Project
-    title="Dummy Company Website"
-    desc="Multi-section responsive website demonstrating UI structure and layout consistency."
-    tech="HTML, CSS, JavaScript"
-    github="https://github.com/Naman105/Dummy-Company-Website-"
+    title="TechCorp Landing Page"
+    desc="A modern responsive landing page built with clean UI and smooth user experience."
+    tech="React, Tailwind CSS"
+    github="https://github.com/Naman105/mytechcorp-landing"
+    live="https://mytechcorp-landing.vercel.app/"
+  />
+
+   <Project
+    title="Responsive Product Showcase"
+    desc="A responsive product showcase website featuring an interactive carousel with smooth animations and dynamic UI transitions, built using Swiper.js for a modern user experience."
+    tech="HTML, CSS, JavaScript, Swiper.js"
+    github="https://github.com/Naman105/responsive-product-showcase"
+    live="https://boisterous-narwhal-6667f6.netlify.app/#"
+  />
+  
+  <Project
+    title="Jarvis Voice Assistant"
+    desc="A Python-based AI voice assistant powered by Hugging Face Transformers that performs system automation, web interactions, and intelligent responses using speech recognition and NLP."
+    tech="Python, SpeechRecognition, pyttsx3, Transformers (Hugging Face), PyTorch, Wikipedia API"
+    github="https://github.com/Naman105/Jarvis-Voice-Assistant"
   />
 
 </div>
@@ -566,10 +583,15 @@ function Card({ title, text }) {
   );
 }
 
-function Project({ title, desc, tech, github }) {
+function Project({ title, desc, tech, github, live }) {
   return (
     <motion.div
-      whileHover={{ scale: 1.06, rotateX: 10, rotateY: -10, boxShadow:"0 30px 80px rgba(59,130,246,0.35)"}}
+      whileHover={{
+        scale: 1.06,
+        rotateX: 10,
+        rotateY: -10,
+        boxShadow: "0 30px 80px rgba(59,130,246,0.35)"
+      }}
       transition={{ type: "spring", stiffness: 200 }}
       whileTap={{ scale: 0.96 }}
       className="cursor-pointer bg-black/40 p-6 rounded-xl border border-gray-800 
@@ -579,18 +601,16 @@ function Project({ title, desc, tech, github }) {
 
       <p className="text-gray-400 mb-4">{desc}</p>
 
-        <div className="flex flex-wrap gap-2 mb-4 text-xs">
-
-{tech.split(",").map((t,i)=>(
-<span
-key={i}
-className="px-2 py-1 border border-gray-700 rounded-full text-blue-400"
->
-{t}
-</span>
-))}
-
-</div>
+      <div className="flex flex-wrap gap-2 mb-4 text-xs">
+        {tech.split(",").map((t, i) => (
+          <span
+            key={i}
+            className="px-2 py-1 border border-gray-700 rounded-full text-blue-400"
+          >
+            {t}
+          </span>
+        ))}
+      </div>
 
       <div className="flex gap-4 items-center">
         <a
@@ -600,6 +620,16 @@ className="px-2 py-1 border border-gray-700 rounded-full text-blue-400"
         >
           <FaGithub /> GitHub
         </a>
+
+        {live && (
+          <a
+            href={live}
+            target="_blank"
+            className="flex items-center gap-2 text-sm text-blue-400 hover:text-white"
+          >
+            <FaExternalLinkAlt /> Live
+          </a>
+        )}
       </div>
     </motion.div>
   );

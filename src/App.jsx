@@ -358,14 +358,14 @@ Featured Projects
 
 <motion.div
   initial={{ scaleX: 0 }}
-  whileInView={{ scaleX: 1 }}
+  whileInView={{ scaleX: 1.91 }}
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}
   className="origin-left h-[2px] w-32 bg-blue-500 mb-6"
 />
 
 <div className="grid md:grid-cols-2 gap-10">
-
+  
   <Project
     title="MERN Weather App"
     desc="A full-stack weather application with real-time API data and responsive UI."
